@@ -1,23 +1,21 @@
+import Header from './Header';
 import Footer from './Footer.jsx';
-import Header from './Header.jsx';
-import HomeBox from './HomeBox.jsx';
-import NewLetter from './NewLetter.jsx';
-import ShowCase from './ShowCase.jsx';
-import AboutSideBar from './AboutSideBar.jsx';
-import AboutBox from './AboutBox.jsx';
-import ServiceSideBar from './ServiceSideBar.jsx';
-import ServiceBox from './ServiceBox.jsx';
-import LoginBox from './LoginBox.jsx';
+import { SideBar } from './SideBar';
+import { PostPaggination, Post, HeadingText, BannerSlide, RelatedPost, ContactArticle, PostDetail,
+PostAuthor, CommentList, CommentBox } from './Content';
 
 export {
-  Footer,
   Header,
-  HomeBox,
-  NewLetter,
-  ShowCase,
-  AboutSideBar,
-  AboutBox,
-  ServiceSideBar,
-  ServiceBox,
-  LoginBox
+  Footer,
+  BannerSlide,
+  PostPaggination,
+  Post,
+  HeadingText,
+  SideBar,
+  RelatedPost,
+  ContactArticle,
+  PostDetail,
+  PostAuthor,
+  CommentList,
+  CommentBox
 };

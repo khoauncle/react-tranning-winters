@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { DashboardPage } from './pages';
 import {Provider} from 'react-redux';
 import store from './storeConfig';
 import './styles/main.scss';
@@ -10,7 +10,7 @@ import { BrowserRouter as Router} from 'react-router-dom';
 ReactDOM.render(
 	<Provider store={store}>
 		<Router>
-			<App />
+			<DashboardPage />
 		</Router>
 	</Provider>
 	, document.getElementById('root'));

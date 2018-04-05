@@ -34,6 +34,10 @@ module.exports = {
       }, {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loader: "file-loader?name=[name].[ext]"
+      },
+      {
+        test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
+        loader: 'url-loader'
       }
     ]
   },
