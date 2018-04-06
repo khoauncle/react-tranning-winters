@@ -1,0 +1,37 @@
+<div class="m-grid__item m-grid__item--fluid m-grid m-grid--hor m-login m-login--singin m-login--2 m-login-2--skin-2">
+    <div class="m-grid__item m-grid__item--fluid m-login__wrapper">
+        <div class="m-login__container">
+            <div class="m-login__head">
+                <h3 class="m-login__title" translate="login">Login</h3>
+            </div>
+            <form class="m-login__form m-form" ng-submit="SignInCtrl.loginForm(loginForm)" name="loginForm" method="POST" novalidate>
+                <div class="form-group m-form__group" ng-class="{'has-danger': (loginForm.email.$error.required && !loginForm.email.$pristine) || loginForm.email.$error.pattern}">
+                    <label translate="mail_address">Mail address</label>
+                    <label class="required-flag" translate="required"></label>
+                    <input ng-disabled="SignInCtrl.isSubmit" ng-pattern="SignInCtrl.regexEmail" maxlength="255" ng-trim="true" ng-model="SignInCtrl.input.email" type="email" autocomplete="off" class="form-control m-input" placeholder="{{'email_placeholder' | translate}}" name="email" required/>
+                    <span ng-if="loginForm.email.$error.required && !loginForm.email.$pristine" class="form-control-feedback" translate="email_blank">Email can not blank!</span>
+                    <span ng-if="loginForm.email.$error.pattern" class="form-control-feedback" translate="email_valid">Email not valid!</span>
+                </div>
+                <div class="form-group m-form__group" ng-class="{'has-danger': loginForm.password.$error.required && !loginForm.password.$pristine}">
+                    <label translate="password">Password</label>
+                    <label class="required-flag" translate="required"></label>
+                    <input type="{{ SignInCtrl.passwordType }}" class="form-control m-input m-login__form-input--last" ng-disabled="SignInCtrl.isSubmit" maxlength="255" ng-trim="true" ng-model="SignInCtrl.input.password" autocomplete="off" placeholder="{{'password_placeholder' | translate}}" name="password"
+                        required/>
+                    <i class="fa fa-eye" ng-click="SignInCtrl.showPassword()"></i>
+                    <span ng-if="loginForm.password.$error.required && !loginForm.password.$pristine" class="form-control-feedback" translate="password_blank">Password can not blank!</span>
+                </div>
+                <div class="row m-login__form-sub">
+                    <div class="col m--align-left m-login__form-left">
+                        <span class="cursor-pointer" ng-click="SignInCtrl.changeLanguage()" translate="language">Language</span>
+                    </div>
+                    <div class="col m--align-right m-login__form-right">
+                        <a ui-sref="requestPassword" class="m-link cursor-pointer" translate="forgot_password">Forgot Password?</a>
+                    </div>
+                </div>
+                <div class="m-login__form-action">
+                    <button type="submit" ng-disabled="!loginForm.$valid || SignInCtrl.isSubmit" class="btn btn-red-hight m-btn m-btn--pill m-btn--custom m-btn--air m-login__btn m-login__btn--primary m-loader--light m-loader--right" ng-class="{'m-loader': SignInCtrl.isSubmit}" translate="login">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

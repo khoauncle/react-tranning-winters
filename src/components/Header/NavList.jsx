@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import img1 from 'images/popular-post/1.jpg';
-import img2 from 'images/popular-post/2.jpg';
-import img3 from 'images/popular-post/3.jpg';
+import img1 from 'images/popular-post/related1.jpg';
+import img2 from 'images/popular-post/related2.jpg';
+import img3 from 'images/popular-post/related3.jpg';
 
 export default class NavList extends Component {
   render() {
