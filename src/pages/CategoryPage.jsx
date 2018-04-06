@@ -6,11 +6,11 @@ export default class CategoryPage extends Component {
     return (
       <div>
           <HeadingText title="Category"/>
-          <section class="blog-content blog-standard">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-9">
-                          <div class="content">
+          <section className="blog-content blog-standard">
+              <div className="container">
+                  <div className="row">
+                      <div className="col-md-9">
+                          <div className="content">
                               <Post typePost="video"/>
                               <Post typePost="audio"/>
                               <Post typePost="image"/>

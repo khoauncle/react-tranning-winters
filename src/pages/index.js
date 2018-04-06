@@ -1,3 +1,3 @@
-import DashboardPage from './DashboardPage.jsx';
+import DashboardPage from './DashboardPage';
 
 export { DashboardPage };

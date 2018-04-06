@@ -1,3 +1,3 @@
-import {login} from './loginAction.jsx';
+import {login} from './loginAction';
 
 module.exports =  {login};

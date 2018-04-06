@@ -3,28 +3,28 @@ import React, { Component } from 'react';
 export default class Footer extends Component {
   render(){
     return (
-      <footer id="footer" class="footer">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-4">
-                      <div class="widget widget_newsletter">
+      <footer id="footer" className="footer">
+          <div className="container">
+              <div className="row">
+                  <div className="col-md-4">
+                      <div className="widget widget_newsletter">
                           <h4>Newsletter</h4>
-                          <div class="desc">
+                          <div className="desc">
                               <p>Subscribe now if you want to recieve updates and news via email.</p>
                           </div>
                           <form id="subscribe-form" action="http://xgio.net/winters/POST">
-                              <div class="form-item form-remove">
+                              <div className="form-item form-remove">
                                   <input type="text" id="subscribe-email" value="Enter your email"/>
                               </div>
-                              <div class="form-actions form-remove">
+                              <div className="form-actions form-remove">
                                   <input type="submit" id="subscribe-button" value="Send"/>
                               </div>
-                              <div class="subscribe-status"></div>
+                              <div className="subscribe-status"></div>
                           </form>
                       </div>
                   </div>
-                  <div class="col-md-3">
-                      <div class="widget widget_meta">
+                  <div className="col-md-3">
+                      <div className="widget widget_meta">
                           <h4>Meta</h4>
                           <ul>
                               <li><a href="#">Log in</a></li>
@@ -33,15 +33,15 @@ export default class Footer extends Component {
                           </ul>
                       </div>
                   </div>
-                  <div class="col-md-3">
-                      <div class="widget widget_latest_tweet">
+                  <div className="col-md-3">
+                      <div className="widget widget_latest_tweet">
                           <h4>Latest tweet</h4>
-                          <div class="latest-tweets" data-username="hoa_doi_2911" data-number="5" data-modpath="twitter/index.html">
+                          <div className="latest-tweets" data-username="hoa_doi_2911" data-number="5" data-modpath="twitter/index.html">
                           </div>
                       </div>
                   </div>
-                  <div class="col-md-2">
-                      <div class="widget widget_archive">
+                  <div className="col-md-2">
+                      <div className="widget widget_archive">
                           <h4>Archives</h4>
                           <ul>
                               <li><a href="#">September 2014</a></li>
@@ -52,7 +52,7 @@ export default class Footer extends Component {
                   </div>
               </div>
           </div>
-          <div class="copyright text-center">
+          <div className="copyright text-center">
               <p>Copyrights © 2014 All Rights Reserved by Xgio</p>
           </div>
       </footer>

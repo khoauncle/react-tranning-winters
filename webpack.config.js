@@ -14,6 +14,15 @@ module.exports = {
     filename: 'index_bundle.js',
     publicPath: '/'
   },
+  resolve: {
+    extensions: ['.jsx', '.js'],
+    alias: {
+      assets: path.resolve(__dirname, './assets'),
+      images: path.resolve(__dirname, './assets/images'),
+      components: path.resolve(__dirname, './src/components'),
+      dumbData: path.resolve(__dirname, './src/dumbData')
+    }
+  },
   module: {
     rules: [
       { test: /\.css$/,

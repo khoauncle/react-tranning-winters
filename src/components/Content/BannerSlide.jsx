@@ -1,122 +1,45 @@
-import React, { Component } from 'react';
-import img1 from '../../../assets/images/feature/1.jpg';
-import img2 from '../../../assets/images/feature/2.jpg';
-import img3 from '../../../assets/images/feature/3.jpg';
+import React, {Component} from 'react';
+import { bannerSlideData } from 'dumbData';
+
+const postThumb = (postData) => {
+  let post =
+  <div className="post">
+    <div className="post-media">
+      <div className="image-wrap">
+        <img src={postData.src} alt=""/>
+      </div>
+    </div>
+    <div className="post-body">
+      <span className="cat">
+        <a href="#">{postData.category}</a>
+      </span>
+      <div className="post-title">
+        <h4>
+          <a href="#">{postData.title}</a>
+        </h4>
+      </div>
+      <div className="post-meta">
+        <span className="post-date">{postData.title}</span>
+      </div>
+    </div>
+  </div>;
+  return post;
+}
+
+const getSlide = bannerSlideData.map( (post) => {
+  return(
+      postThumb(post)
+    )
+  })
 
 export default class BannerSlide extends Component {
-  render(){
+
+  render() {
     return (
-        <section class="featured">
-          <div class="featured-slider">
-              <div class="post">
-                  <div class="post-media">
-                      <div class="image-wrap">
-                          <img src={img1} alt=""/>
-                      </div>
-                  </div>
-                  <div class="post-body">
-                      <span class="cat"><a href="#">Lifestyle</a></span>
-                      <div class="post-title">
-                          <h4>
-                              <a href="#">There are many variations</a>
-                          </h4>
-                      </div>
-                      <div class="post-meta">
-                          <span class="post-date">March 8, 2015</span>
-                      </div>
-                  </div>
-              </div>
-              <div class="post">
-                  <div class="post-media">
-                      <div class="image-wrap">
-                          <img src={img2} alt=""/>
-                      </div>
-                  </div>
-                  <div class="post-body">
-                      <span class="cat"><a href="#">Lifestyle</a></span>
-                      <div class="post-title">
-                          <h4>
-                              <a href="#">There are many variations</a>
-                          </h4>
-                      </div>
-                      <div class="post-meta">
-                          <span class="post-date">March 8, 2015</span>
-                      </div>
-                  </div>
-              </div>
-              <div class="post">
-                  <div class="post-media">
-                      <div class="image-wrap">
-                          <img src={img3} alt=""/>
-                      </div>
-                  </div>
-                  <div class="post-body">
-                      <span class="cat"><a href="#">Lifestyle</a></span>
-                      <div class="post-title">
-                          <h4>
-                              <a href="#">There are many variations</a>
-                          </h4>
-                      </div>
-                      <div class="post-meta">
-                          <span class="post-date">March 8, 2015</span>
-                      </div>
-                  </div>
-              </div>
-              <div class="post">
-                  <div class="post-media">
-                      <div class="image-wrap">
-                          <img src={img1} alt=""/>
-                      </div>
-                  </div>
-                  <div class="post-body">
-                      <span class="cat"><a href="#">Lifestyle</a></span>
-                      <div class="post-title">
-                          <h4>
-                              <a href="#">There are many variations</a>
-                          </h4>
-                      </div>
-                      <div class="post-meta">
-                          <span class="post-date">March 8, 2015</span>
-                      </div>
-                  </div>
-              </div>
-              <div class="post">
-                  <div class="post-media">
-                      <div class="image-wrap">
-                          <img src={img2} alt=""/>
-                      </div>
-                  </div>
-                  <div class="post-body">
-                      <span class="cat"><a href="#">Lifestyle</a></span>
-                      <div class="post-title">
-                          <h4>
-                              <a href="#">There are many variations</a>
-                          </h4>
-                      </div>
-                      <div class="post-meta">
-                          <span class="post-date">March 8, 2015</span>
-                      </div>
-                  </div>
-              </div>
-              <div class="post">
-                  <div class="post-media">
-                      <div class="image-wrap">
-                          <img src={img3} alt=""/>
-                      </div>
-                  </div>
-                  <div class="post-body">
-                      <span class="cat"><a href="#">Lifestyle</a></span>
-                      <div class="post-title">
-                          <h4>
-                              <a href="#">There are many variations</a>
-                          </h4>
-                      </div>
-                      <div class="post-meta">
-                          <span class="post-date">March 8, 2015</span>
-                      </div>
-                  </div>
-              </div>
-          </div>
+      <section className="featured">
+        <div className="featured-slider">
+          {getSlide}
+        </div>
       </section>
     )
   }

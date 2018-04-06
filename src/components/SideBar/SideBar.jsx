@@ -1,72 +1,72 @@
 import React, { Component } from 'react';
-import img1 from '../../../assets/images/2.jpg';
-import imgLatest1 from '../../../assets/images/latest/1.jpg';
-import imgLatest2 from '../../../assets/images/latest/2.jpg';
-import imgLatest3 from '../../../assets/images/latest/3.jpg';
-import imgFlickr1 from '../../../assets/images/flickr/1.jpg';
-import imgFlickr2 from '../../../assets/images/flickr/2.jpg';
-import imgFlickr3 from '../../../assets/images/flickr/3.jpg';
-import imgFlickr4 from '../../../assets/images/flickr/4.jpg';
-import imgFlickr5 from '../../../assets/images/flickr/5.jpg';
-import imgFlickr6 from '../../../assets/images/flickr/6.jpg';
-import imgFlickr7 from '../../../assets/images/flickr/7.jpg';
-import imgFlickr8 from '../../../assets/images/flickr/8.jpg';
-import imgFlickr9 from '../../../assets/images/flickr/9.jpg';
+import img1 from 'images/2.jpg';
+import imgLatest1 from 'images/latest/1.jpg';
+import imgLatest2 from 'images/latest/2.jpg';
+import imgLatest3 from 'images/latest/3.jpg';
+import imgFlickr1 from 'images/flickr/1.jpg';
+import imgFlickr2 from 'images/flickr/2.jpg';
+import imgFlickr3 from 'images/flickr/3.jpg';
+import imgFlickr4 from 'images/flickr/4.jpg';
+import imgFlickr5 from 'images/flickr/5.jpg';
+import imgFlickr6 from 'images/flickr/6.jpg';
+import imgFlickr7 from 'images/flickr/7.jpg';
+import imgFlickr8 from 'images/flickr/8.jpg';
+import imgFlickr9 from 'images/flickr/9.jpg';
 
 export default class SideBar extends Component {
   render(){
     return (
-      <div class="col-md-3">
-          <div class="sidebar sidebar-right">
-              <div class="widget widget_about">
+      <div className="col-md-3">
+          <div className="sidebar sidebar-right">
+              <div className="widget widget_about">
                   <h4>About me</h4>
-                  <div class="author-thumb">
+                  <div className="author-thumb">
                       <img src={img1} alt=""/>
                   </div>
-                  <h3 class="author-name text-uppercase"><a href="#">Steven Typer</a></h3>
-                  <div class="desc">
+                  <h3 className="author-name text-uppercase"><a href="#">Steven Typer</a></h3>
+                  <div className="desc">
                       <p>Cras imperdiet in sem sed sodales. Nunc urna lectus, elementum id rhoncus ac, accumsan sed sapien.</p>
                   </div>
-                  <div class="about-social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-tumblr"></i></a>
+                  <div className="about-social">
+                      <a href="#"><i className="fa fa-facebook"></i></a>
+                      <a href="#"><i className="fa fa-google-plus"></i></a>
+                      <a href="#"><i className="fa fa-twitter"></i></a>
+                      <a href="#"><i className="fa fa-tumblr"></i></a>
                   </div>
               </div>
-              <div class="widget widget_latest_post">
+              <div className="widget widget_latest_post">
                   <h4>Latest post</h4>
                   <ul>
                       <li>
-                          <div class="image-wrap">
+                          <div className="image-wrap">
                               <img src={imgLatest1} alt=""/>
                           </div>
-                          <div class="content-text">
+                          <div className="content-text">
                               <a href="#">Suspendisse lobortis mollis arcu quis</a>
-                              <span class="date">Jan 10, 2014</span>
+                              <span className="date">Jan 10, 2014</span>
                           </div>
                       </li>
                       <li>
-                          <div class="image-wrap">
+                          <div className="image-wrap">
                               <img src={imgLatest2} alt=""/>
                           </div>
-                          <div class="content-text">
+                          <div className="content-text">
                               <a href="#">Suspendisse lobortis mollis arcu quis</a>
-                              <span class="date">Jan 10, 2014</span>
+                              <span className="date">Jan 10, 2014</span>
                           </div>
                       </li>
                       <li>
-                          <div class="image-wrap">
+                          <div className="image-wrap">
                               <img src={imgLatest3} alt=""/>
                           </div>
-                          <div class="content-text">
+                          <div className="content-text">
                               <a href="#">Suspendisse lobortis mollis arcu quis</a>
-                              <span class="date">Jan 10, 2014</span>
+                              <span className="date">Jan 10, 2014</span>
                           </div>
                       </li>
                   </ul>
               </div>
-              <div class="widget widget_categories">
+              <div className="widget widget_categories">
                   <h4>Categories</h4>
                   <ul>
                       <li><a href="#">Music</a></li>
@@ -75,9 +75,9 @@ export default class SideBar extends Component {
                       <li><a href="#">Lifestyle</a></li>
                   </ul>
               </div>
-              <div class="widget widget_flickr">
+              <div className="widget widget_flickr">
                   <h4>Flickr</h4>
-                  <ul class="flickr">
+                  <ul className="flickr">
                       <li><a href="#"><img src={imgFlickr1} alt=""/></a></li>
                       <li><a href="#"><img src={imgFlickr2} alt=""/></a></li>
                       <li><a href="#"><img src={imgFlickr3} alt=""/></a></li>
@@ -89,7 +89,7 @@ export default class SideBar extends Component {
                       <li><a href="#"><img src={imgFlickr9} alt=""/></a></li>
                   </ul>
               </div>
-              <div class="widget widget_calendar">
+              <div className="widget widget_calendar">
                   <div id="calendar_wrap">
                       <table id="wp-calendar">
                           <caption>March 2015</caption>
@@ -107,13 +107,13 @@ export default class SideBar extends Component {
                           <tfoot>
                               <tr>
                                   <td colspan="3" id="prev"><a href="#">« Jan</a></td>
-                                  <td class="pad">&nbsp;</td>
-                                  <td colspan="3" id="next" class="pad">&nbsp;</td>
+                                  <td className="pad">&nbsp;</td>
+                                  <td colspan="3" id="next" className="pad">&nbsp;</td>
                               </tr>
                           </tfoot>
                           <tbody>
                               <tr>
-                                  <td colspan="6" class="pad">&nbsp;</td>
+                                  <td colspan="6" className="pad">&nbsp;</td>
                                   <td>1</td>
                               </tr>
                               <tr>
@@ -155,15 +155,15 @@ export default class SideBar extends Component {
                               <tr>
                                   <td>30</td>
                                   <td>31</td>
-                                  <td class="pad" colspan="5">&nbsp;</td>
+                                  <td className="pad" colspan="5">&nbsp;</td>
                               </tr>
                           </tbody>
                       </table>
                   </div>
               </div>
-              <div class="widget widget_tag_cloud">
+              <div className="widget widget_tag_cloud">
                   <h4>Tag cloud</h4>
-                  <div class="tagcloud">
+                  <div className="tagcloud">
                       <a href="#">Recipe</a>
                       <a href="#">Chicken</a>
                       <a href="#">Wordpress</a>

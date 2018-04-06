@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import { Route,Switch } from 'react-router-dom';
-import {Header, Footer, BannerSlide} from '../components';
-import HomePage from './HomePage.jsx';
-import AboutPage from './AboutPage.jsx';
-import CategoryPage from './CategoryPage.jsx';
-import ContactPage from './ContactPage.jsx';
-import SinglePage from './SinglePage.jsx';
+import {Header, Footer, BannerSlide} from 'components';
+import HomePage from './HomePage';
+import AboutPage from './AboutPage';
+import CategoryPage from './CategoryPage';
+import ContactPage from './ContactPage';
+import SinglePage from './SinglePage';
 
 export default class DashboardPage extends Component {
   render() {
@@ -14,9 +14,9 @@ export default class DashboardPage extends Component {
         <div id="page-wrap">
             <Header/>
               <div id="preloader">
-                  <div class="tb-cell">
-                      <div class="page-loading">
-                          <div class="item-icon"></div>
+                  <div className="tb-cell">
+                      <div className="page-loading">
+                          <div className="item-icon"></div>
                       </div>
                   </div>
               </div>

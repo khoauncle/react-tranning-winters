@@ -1,4 +1,4 @@
-import loginReducer from './accountReducer.jsx';
+import loginReducer from './accountReducer';
 import {combineReducers} from 'redux';
 
 var reducer = combineReducers({

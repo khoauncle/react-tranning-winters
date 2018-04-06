@@ -1,5 +1,5 @@
 import Header from './Header';
-import Footer from './Footer.jsx';
+import Footer from './Footer';
 import { SideBar } from './SideBar';
 import { PostPaggination, Post, HeadingText, BannerSlide, RelatedPost, ContactArticle, PostDetail,
 PostAuthor, CommentList, CommentBox } from './Content';

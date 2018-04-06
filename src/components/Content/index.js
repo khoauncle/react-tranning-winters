@@ -1,13 +1,13 @@
-import HeadingText from './HeadingText.jsx';
-import BannerSlide from './BannerSlide.jsx'
-import Post from './Post.jsx';
-import PostPaggination from './PostPaggination.jsx';
-import RelatedPost from './RelatedPost.jsx';
-import ContactArticle from './ContactArticle.jsx';
-import PostDetail from './PostDetail.jsx';
-import PostAuthor from './PostAuthor.jsx';
-import CommentList from './CommentList.jsx';
-import CommentBox from './CommentBox.jsx';
+import HeadingText from './HeadingText';
+import BannerSlide from './BannerSlide'
+import Post from './Post';
+import PostPaggination from './PostPaggination';
+import RelatedPost from './RelatedPost';
+import ContactArticle from './ContactArticle';
+import PostDetail from './PostDetail';
+import PostAuthor from './PostAuthor';
+import CommentList from './CommentList';
+import CommentBox from './CommentBox';
 
 export {
   HeadingText,
